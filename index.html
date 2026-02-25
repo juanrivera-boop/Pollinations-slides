@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Explorer | Interactive Gallery</title>
+    <meta name="description"
+        content="Una galería interactiva para explorar cómics digitales con una experiencia visual premium.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="gradient-text">Explorador de Cómics</h1>
+            <p class="subtitle">Descubre historias increíbles a través de nuestra colección</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="image-grid" class="grid">
+            <!-- Images will be loaded here dynamically -->
+            <div class="loader">
+                <div class="spinner"></div>
+                <p>Cargando colección...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Comic Viewer -->
+    <div id="comic-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <iframe id="comic-iframe" src="" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button id="open-new-tab" class="btn-secondary">Abrir en ventana completa</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Diseñado por Juan Guillermo Rivera Berrío con tecnología Gemini 2.0 Flash y asistencia de Antigravity</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
